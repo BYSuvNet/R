@@ -12,11 +12,13 @@
 * Installera och använda bibliotek
 * tidyverse, yarrr
 * Genererea slumpdata
-* glimpse och tibbles
-
+* Mer plottning
+* Arbeta med inbyggda datasets
+* Utforska och plotta data från dataset
 
 ## Lektion 3:
-
+* Vad var skillnaden mellan data frame och matris?
+* Mer avancerad manipulation av dataframes
 
 ## Lektion 4:
 * SQL och REST APIer
