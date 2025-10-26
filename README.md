@@ -11,7 +11,8 @@
 ## Lektion 2: Bibliotek och datasets
 * Installera och använda bibliotek
 * tidyverse, yarrr
-* 
+* Genererea slumpdata
+* glimpse och tibbles
 
 
 ## Lektion 3:
