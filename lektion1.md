@@ -84,19 +84,21 @@ Syfte: Att bekanta sig lite mer med några funktioner
 
 De grundläggande datatyperna är de minsta beståndsdelarna av data vi kan hantera i R när vi gör analyser. Det är ju dock först när det blir samlingar av värden vi kan analysera det och vi kan skapa statistik!
 
-* Vektorer - c(), length(), []
+* Vektorer - c(), length(), [], x:y, rep()
+* Listor - $, [[ ]] (Nästlade strukturer)
+* Data Frames - varje kolumn en vektor; nrow(), ncol(), names(), str(), head(), tail(), View()
 * Faktorer (kategorier) - order, levels
-* Listor - $, [ [ ] ] (Nästlade objekt)
-* Data Frames - 
 
 ### Övningar #2
 
 #### 2.1 Vektorer
-#### 2.1 Vektorer
-#### 2.1 Vektorer
-#### 2.1 Vektorer
 
+1. Skapa en vektor som innehåller minst tio nummer (använd c() eller tex 1:10)
+2. 
 
+#### 2.2 Faktorer
+#### 2.3 Listor
+#### 2.4 Data Frames
 
 ## Viktiga ord och begrepp
 
