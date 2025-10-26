@@ -114,6 +114,33 @@ De grundläggande datatyperna är de minsta beståndsdelarna av data vi kan hant
 5. Använd head() och tail() för att se de första respektive sista raderna i din data frame.
 6. Använd View() för att öppna din data frame i en ny flik i RStudio. (Prova också att bara klicka på data frame-namnet i Environment-panelen)
 
+## 5. Inbyggda dataset
+R kommer med flera inbyggda dataset som du kan använda för att öva och lära dig. Ett av de mest kända är `mtcars`, som innehåller data om olika bilmodeller.
+
+### Övningar #3
+1. Ladda in datasetet `mtcars` genom att skriva `data(mtcars)` i konsolen.
+2. Använd str(), head(), tail() och summary() för att utforska datasetet.
+3. Använd View() för att öppna `mtcars` i en ny flik i RStudio.
+4. Prova att skapa en vektor med alla värden i kolumnen `mpg` (miles per gallon) och beräkna medelvärdet med mean().
+
+## 6. Enkel plottning
+R har kraftfulla verktyg för datavisualisering. En av de enklaste sätten att skapa diagram är med funktionen `plot()`.
+
+### Övningar #4
+
+1. Använd datasetet `mtcars` igen.
+2. Skapa ett enkelt spridningsdiagram som visar sambandet mellan `wt` (vikt) och `mpg` (miles per gallon) med följande kod:
+```r
+plot(mtcars$wt, mtcars$mpg, main="Vikt vs Miles per Gallon", xlab="Vikt (1000 lbs)", ylab="Miles per Gallon")
+```
+3. Experimentera med olika typer av diagram, till exempel histogram med `hist()` och stapeldiagram med `barplot()`.
+    * Skapa ett histogram av `mpg`-kolumnen i `mtcars`.
+    * Skapa ett stapeldiagram som visar antalet bilar för varje antal cylindrar (`cyl`-kolumnen).
+    * Anpassa dina diagram med titlar, axel-etiketter och färger.
+    * Gör en barplot över antalet bilar per antal cylindrar i mtcars.
+4. Hitta något annat dataset och gör en plot med det. Tänk på att du kan använda de olika statistikmetoderna du lärt dig för att sammanfatta data innan du plottar det. Exempelvis kan du plotta medelvärdet av en variabel, eller skapa en plot av en vektor du skapat själv.
+
+
 ## Viktiga ord och begrepp
 
 #### Kortkommandon
