@@ -1,10 +1,10 @@
 # R
 ## Lektion 1: Introduktion till R
-* Installation
-* Vad är R?
+* Grundläggande programmering: Enkla värden, datatyper (skalär, vektor, dataframe), funktioner (1h)
+* Vad är R? 
 * RStudio och De Fyra Panelerna
-* Uttryck, värden/variabler, funktioner -> Enkla övningar
-* Datastrukturer och enkla statistikmetoder -> Övningar
+* Uttryck, värden/variabler, funktioner -> Enkla övningar (1h)
+* Datastrukturer och enkla statistikmetoder -> Övningar (Fram till vektorer 1h. Dataframes 1h)
 * Inbyggda dataset -> Övningar
 * Enkel plottning -> Övningar
 

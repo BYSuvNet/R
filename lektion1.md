@@ -113,13 +113,14 @@ De grundläggande datatyperna är de minsta beståndsdelarna av data vi kan hant
 4. Använd str() för att få en översikt över strukturen på din data frame.
 5. Använd head() och tail() för att se de första respektive sista raderna i din data frame.
 6. Använd View() för att öppna din data frame i en ny flik i RStudio. (Prova också att bara klicka på data frame-namnet i Environment-panelen)
+7. Använd summary() och jämför resultatet med det du får om du använder det på en vektor.
 
 ## 5. Inbyggda dataset
 R kommer med flera inbyggda dataset som du kan använda för att öva och lära dig. Ett av de mest kända är `mtcars`, som innehåller data om olika bilmodeller.
 
 ### Övningar #3
-1. Ladda in datasetet `mtcars` genom att skriva `data(mtcars)` i konsolen.
-2. Använd str(), head(), tail() och summary() för att utforska datasetet.
+1. Kör kommandot `data()` för att se alla inbyggda dataset i R.
+2. Använd str(), head(), tail() och summary() för att utforska datasetet `mtcars`. (du behöver inte ladda in det, det är redan tillgängligt)
 3. Använd View() för att öppna `mtcars` i en ny flik i RStudio.
 4. Prova att skapa en vektor med alla värden i kolumnen `mpg` (miles per gallon) och beräkna medelvärdet med mean().
 
