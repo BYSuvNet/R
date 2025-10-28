@@ -136,7 +136,6 @@ plot(mtcars$wt, mtcars$mpg, main="Vikt vs Miles per Gallon", xlab="Vikt (1000 lb
 ```
 3. Experimentera med olika typer av diagram, till exempel histogram med `hist()` och stapeldiagram med `barplot()`.
     * Skapa ett histogram av `mpg`-kolumnen i `mtcars`.
-    * Skapa ett stapeldiagram som visar antalet bilar för varje antal cylindrar (`cyl`-kolumnen).
     * Anpassa dina diagram med titlar, axel-etiketter och färger.
     * Gör en barplot över antalet bilar per antal cylindrar i mtcars.
 4. Hitta något annat dataset och gör en plot med det. Tänk på att du kan använda de olika statistikmetoderna du lärt dig för att sammanfatta data innan du plottar det. Exempelvis kan du plotta medelvärdet av en variabel, eller skapa en plot av en vektor du skapat själv.
