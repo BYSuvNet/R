@@ -57,3 +57,35 @@ Yarrr är ett paket som innehåller funktioner och dataset som används i boken 
     * Density: en jämn linje som följer staplarnas form
 
 ## Utforska och plotta data från dataset
+
+Vi tittar på plottning av data och samband. Här är exempelkoden för att leta samband i luftkvalitetsdata:
+
+```r
+# Ladda in datasetet airquality, men ta först bort alla observationer som saknar någon data
+aq <- na.omit(airquality)
+
+# Lagra två variabler i a och b så att vi lätt kan testa olika saker här
+a <- aq$Wind
+b <- aq$Temp
+
+# Plotta ut a och b med en scatterplot, döp axlarna till något om du vill
+plot(a, b, pch = 19, xlab = "Vindstyrka", ylab = "Temperatur")
+
+# Rita en mjuk linje genom punkterna. "f" bestämmer hur mjuk linjen ska vara. 1 = spikrak
+lines(lowess(a, b, f = 0.3), lwd = 2, col = "red")
+
+# Ritar ut den räta linje (regressionslinje) som bäst beskriver sambandet
+# mellan temperatur (Temp) och vindhastighet (Wind) i datamängden 'aq'.
+# Linjen beräknas med en linjär modell (lm) och läggs ovanpå den befintliga plotten.
+abline(lm(Temp ~ Wind, data = aq))
+
+# Beräknar korrelationskoefficienten (Pearsons r) mellan vektorerna a och b.
+# Resultatet visar styrkan och riktningen på det linjära sambandet (-1 till +1).
+# Noll betyder inget samband, de andra positiva eller negativa samband
+cor(a, b)
+
+# Utför ett statistiskt test på korrelationen mellan a och b.
+# Testar om sambandet skiljer sig signifikant från 0 (ingen korrelation).
+# Returnerar även p-värde, konfidensintervall och t-värde.
+cor.test(a, b)
+```
