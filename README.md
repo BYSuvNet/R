@@ -16,6 +16,7 @@
 * Utforska och plotta data från dataset
 
 ## Lektion 3:
+* Indexering av vektorer 
 * na.rm = TRUE
 * Dataframe slicing
     * [, ]
@@ -24,9 +25,6 @@
 * Manipulation av dataframes
     * order() och merge()
     * aggregate()
-* which.max(Data_Cars$hp)
-* which.min(Data_Cars$hp)
-* quantile() - ett värde på hur många procent av värdena som är under ett visst värde
 
 ## Lektion 4:
 * SQL, REST APIer och extern data
