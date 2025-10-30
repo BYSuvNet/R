@@ -9,19 +9,29 @@
 * Enkel plottning -> Övningar
 
 ## Lektion 2: Bibliotek och datasets
-* Installera och använda bibliotek
-* tidyverse, yarrr
+* Installera och använda bibliotek: yarrr
 * Genererea slumpdata
 * Mer plottning
 * Arbeta med inbyggda datasets
 * Utforska och plotta data från dataset
 
 ## Lektion 3:
-* Vad var skillnaden mellan data frame och matris?
-* Mer avancerad manipulation av dataframes
+* na.rm = TRUE
+* Dataframe slicing
+    * [, ]
+    * Logiska vektorer
+    * subset()
+* Manipulation av dataframes
+    * order() och merge()
+    * aggregate()
+* which.max(Data_Cars$hp)
+* which.min(Data_Cars$hp)
+* quantile() - ett värde på hur många procent av värdena som är under ett visst värde
 
 ## Lektion 4:
-* SQL och REST APIer
+* SQL, REST APIer och extern data
+* read.csv(), read.table()
+* write.csv(), write.table()
 
 ## Lektion 5:
 * Presentation med R Markdown
@@ -30,5 +40,5 @@
 * LAB (Obligatorisk)
 
 ## Bra länkar:
-* https://www.w3schools.com/r/
 * https://bookdown.org/ndphillips/YaRrr/
+* https://www.w3schools.com/r/
