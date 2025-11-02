@@ -24,18 +24,22 @@
     * subset()
 * Manipulation av dataframes
     * order() och merge()
-    * aggregate()
 
 ## Lektion 4:
+* aggregate()
+* Sammanfattande övning
 * SQL, REST APIer och extern data
 * read.csv(), read.table()
 * write.csv(), write.table()
 
 ## Lektion 5:
 * Presentation med R Markdown
+* 
 
 ## Lektion 6:
+
 * LAB (Obligatorisk)
+    Vi använder oss av det vi lärt oss! Ni får ett dataset som ni ska ladda in, undersöka, eventuellt rensa/fixa och sedan analysera utifrån några frågeställningar. Sedan skall resultatet presenteras som en PDF genererat från R Markdown och skickas in till mig tillsammans med källkoden som har genererat den.
 
 ## Bra länkar:
 * https://bookdown.org/ndphillips/YaRrr/
