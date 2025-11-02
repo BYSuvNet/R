@@ -1,0 +1,101 @@
+id,name,price,brand,category,costPrice
+1,Uppblåsbar lägereld,496.21,KnasFriluft,Picnic,433.84
+2,Solcellsdriven myggviskare,398.78,OutdoorOdd,Picnic,161.94
+3,Portabel stubbe att sitta på,468.44,Fjällfån,Other,398.92
+4,Hopfällbar vindskydds-spegel,250.97,Wilderness WTF,Picnic,208.38
+5,Vattentät bok om eld,490.26,Skogstokig,Fishing,386.67
+6,GPS för din termos,111.6,Skogstokig,Camping,46.5
+7,Tält med inbyggd discokula,702.72,Wilderness WTF,Fishing,594.55
+8,Självuppvärmande marshmallowpinne,179.01,Skogstokig,Picnic,70.87
+9,Uppblåsbar gran för julfirande i skogen,175.45,Fjällfån,Camping,144.52
+10,Kikare för närbilder,99.9,KnasFriluft,Survival,83.63
+11,Sovsäck med armar och ben,238.68,KnasFriluft,Survival,199.95
+12,Campingstol i storlek nyckelring,467.62,Wilderness WTF,Survival,383.24
+13,Regnponcho med inbyggd wifi-förstärkare,210.94,Skogstokig,Climbing,173.65
+14,Ficklampa som bara lyser bakåt,180.49,Fjällfån,Climbing,154.19
+15,Eldstartare som kräver wifi,179.29,Wilderness WTF,Hiking,149.74
+16,Campingkastrull med bluetooth,75.98,Fjällfån,Fishing,63.28
+17,Multiverktyg med bara flasköppnare,62.82,OutdoorOdd,Picnic,61.0
+18,Trangiakök i guldplast,327.42,OutdoorOdd,Fishing,271.23
+19,Kompass som alltid pekar åt väst,206.6,Wilderness WTF,Survival,175.77
+20,Sovsäck i form av en banan,245.21,KnasFriluft,Survival,228.18
+21,Myggspray med doft av grillkorv,547.82,Wilderness WTF,Fishing,454.55
+22,Kylväska som värmer,173.83,Wilderness WTF,Fishing,144.59
+23,Stegräknare för sovsäcken,791.78,OutdoorOdd,Camping,669.38
+24,Hopfällbar hängmatta av betong,391.96,OutdoorOdd,Fishing,327.67
+25,Campingbord med inbyggd sandlåda,237.55,Skogstokig,Other,207.51
+26,Vandringsstav med selfiepinne,417.59,Skogstokig,Hiking,357.55
+27,Tält med fönsterhiss,621.28,KnasFriluft,Picnic,513.39
+28,Vattenflaska med inbyggd mp3-spelare,152.7,Wilderness WTF,Hiking,149.65
+29,Solhatt med solpaneler och USB,366.49,KnasFriluft,Picnic,299.3
+30,Portabel grill som drivs av handvev,829.9,Wilderness WTF,Hiking,720.78
+31,Campingkudde med inbyggd väckarklocka,316.75,KnasFriluft,Picnic,259.25
+32,Termos som bara håller värmen i 5 minuter,153.84,Wilderness WTF,Fishing,130.84
+33,Stormkök med röststyrning,242.8,KnasFriluft,Climbing,198.61
+34,Eldfast regnponcho,252.49,Skogstokig,Other,209.81
+35,Skosnören med GPS,82.26,Fjällfån,Other,71.1
+36,Tältduk i genomskinlig plast,936.89,Fjällfån,Camping,757.58
+37,Campingtofflor med dubbar,305.77,Wilderness WTF,Hiking,246.07
+38,Fällkniv som bara innehåller tandpetare,156.06,Wilderness WTF,Picnic,130.3
+39,Hopfällbar stubbe i plast,100.56,KnasFriluft,Other,40.77
+40,Sovsäck med inbyggd ficklampa på insidan,622.95,Skogstokig,Fishing,521.28
+41,Vandringsstrumpor med bluetooth,281.0,Wilderness WTF,Fishing,239.72
+42,Portabel dass med inbyggd radio,387.21,Skogstokig,Fishing,146.38
+43,Fiskespö som också är paraply,149.92,Wilderness WTF,Climbing,126.6
+44,Uppblåsbar sovsäck,751.31,Skogstokig,Hiking,301.29
+45,Campinggrill i form av en kaktus,930.11,Skogstokig,Camping,790.09
+46,Kompass som pekar mot närmaste snabbmatsrestaurang,196.08,Fjällfån,Hiking,165.91
+47,Myggnät med broderade hål,261.06,Wilderness WTF,Climbing,224.29
+48,Regnjacka i papper,318.78,Fjällfån,Picnic,257.72
+49,Campingmugg i storlek XXL (20 liter),247.59,Skogstokig,Hiking,207.15
+50,Sovsäck med inbyggd projektor,513.05,Fjällfån,Camping,195.31
+51,Campingstol med inbyggd hårtork,645.54,Fjällfån,Picnic,537.95
+52,Hopfällbar stubbe av glas,110.03,Wilderness WTF,Climbing,93.25
+53,Tält med doft av grillad kyckling,802.99,Wilderness WTF,Survival,674.62
+54,Campingbestick i form av lego,112.5,Fjällfån,Fishing,95.04
+55,Vandringskeps med drönarplatta,368.46,Fjällfån,Climbing,307.09
+56,Campingväska med hjul som inte rullar,396.38,OutdoorOdd,Camping,333.4
+57,Hängmatta i stål,282.76,Wilderness WTF,Fishing,114.8
+58,Tält i form av en igloo med AC,833.7,Fjällfån,Picnic,717.96
+59,Fickkniv med bara saxar,75.9,Wilderness WTF,Picnic,73.33
+60,Campinglampa med inbyggd fläkt för att sprida mygg,71.48,Wilderness WTF,Survival,57.22
+61,Stormtändare som bara fungerar i solsken,443.34,KnasFriluft,Other,375.52
+62,Campingkudde fylld med popcorn,362.12,Wilderness WTF,Climbing,309.5
+63,Solcellsdriven pannlampa (som bara funkar på dagen),79.45,Wilderness WTF,Survival,65.69
+64,Campingstol med inbyggd massagefunktion,241.67,KnasFriluft,Camping,194.65
+65,Uppblåsbar ryggsäck,746.72,OutdoorOdd,Other,644.18
+66,Sovsäck i jeans,710.17,Wilderness WTF,Fishing,594.96
+67,Kompass som snurrar konstant,193.03,Wilderness WTF,Picnic,163.35
+68,Campingbord som kräver eluttag,446.13,KnasFriluft,Fishing,387.6
+69,Vandringsstav i glas,369.78,Wilderness WTF,Other,345.86
+70,Portabel dusch med 1 ml vattenkapacitet,372.8,KnasFriluft,Picnic,310.94
+71,Campingtält i storlek dockhus,1152.75,Wilderness WTF,Climbing,959.28
+72,Kylväska som smälter isen snabbare,77.6,Fjällfån,Survival,65.85
+73,Campinghatt som är ett miniväxthus,294.56,Fjällfån,Survival,115.14
+74,Hopfällbar stubbe med LED-belysning,301.6,Fjällfån,Climbing,254.67
+75,Regnponcho med inbyggd spegel,338.89,KnasFriluft,Picnic,283.47
+76,Campingtofflor som visslar,129.59,Fjällfån,Picnic,54.71
+77,Sovsäck som luktar grillad korv,415.74,OutdoorOdd,Camping,405.06
+78,Portabel myggfälla som lockar björnar,150.61,Skogstokig,Picnic,139.06
+79,Vandringsryggsäck i sammet,566.3,Skogstokig,Other,477.81
+80,Campinggrill som är en engångständare,877.03,OutdoorOdd,Climbing,725.97
+81,Hopfällbar stubbe i betong,482.97,KnasFriluft,Camping,402.93
+82,Campingmugg som läcker,349.18,OutdoorOdd,Other,334.8
+83,Sovsäck med inbyggd ficka för pizza,629.29,OutdoorOdd,Camping,530.97
+84,Kompass med felstavade väderstreck,94.17,Fjällfån,Hiking,77.31
+85,Vandringskängor med hjul,486.19,Fjällfån,Hiking,197.41
+86,Campingstol i origami,245.81,Fjällfån,Survival,205.65
+87,Tält med rökfylld effekt,711.68,Wilderness WTF,Picnic,592.94
+88,Vattenflaska som bara rymmer 10 ml,231.31,Fjällfån,Survival,187.38
+89,Campingväska i form av en TV,195.6,OutdoorOdd,Camping,160.39
+90,Multiverktyg med bara kam,334.34,KnasFriluft,Fishing,276.15
+91,Campingbord i miniatyr,270.25,OutdoorOdd,Survival,228.33
+92,Sovsäck i plastfolie,284.26,Skogstokig,Other,121.56
+93,Vandringskeps med inbyggd fläkt,397.87,Wilderness WTF,Hiking,324.11
+94,Campingstol i form av enhörning,641.87,Wilderness WTF,Hiking,522.65
+95,Hopfällbar stubbe i tyg,83.91,Fjällfån,Picnic,70.18
+96,Kylväska som spelar musik,302.16,Skogstokig,Other,248.6
+97,Campinglampa som bara blinkar i rött,299.47,KnasFriluft,Fishing,244.96
+98,Portabel grill i form av en bok,251.26,KnasFriluft,Camping,205.27
+99,Sovsäck som inte går att stänga,360.24,Skogstokig,Climbing,293.66
+100,Vandringsstav med paraply,314.64,KnasFriluft,Fishing,265.15
