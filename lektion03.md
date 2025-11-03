@@ -63,5 +63,32 @@ mean(age, na.rm = TRUE)
 
 ## Fjärde timmen - Dataframe slicing och manipulation
 
+```r
+# Hämta ut alla rader där age är över 40
+df[df$Age > 40, ]
+
+# Välj ut de första sex kolumnerna
+myPirates <-pirates[,1:6]
+
+# Välj ut alla pensionerade kvinnliga pirater som bär pannband
+femalePirates <- myPirates[myPirates$sex == "female" & 
+                             myPirates$age >= 65 & 
+                             myPirates$headband == "yes", ]
+
+# Räkna ut deras medelålder
+meanFemalePirateAge <- length(femalePirates)
+meanFemalePirateAge
+
+aSubset <- subset(myPirates, 
+  subset = sex == "female" &
+    age >= 65 & 
+    headband == "yes"
+       )
+
+meanFemalePirateAge <- mean(myPirates[myPirates$sex == 'female' & myPirates$age > 35,]$age)
+meanFemalePirateAge
+
+```
+
 
 
