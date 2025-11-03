@@ -90,5 +90,37 @@ meanFemalePirateAge
 
 ```
 
+```r
+# order()
+
+# Välj ut de första sex kolumnerna
+myPirates <-pirates[,1:6]
+
+# Ordna alla pirater efter längd
+listaMedPiratIndexOrdnadEfterLängd <- order(myPirates$age, myPirates$height)
+myPirates <- myPirates[listaMedPiratIndexOrdnadEfterLängd, ]
+
+# merge()
+
+# Results from a risk survey
+risk.survey <- data.frame(
+  "id" = c(1, 2, 3, 4, 5),
+  "risk.score" = c(3, 4, 5, 3, 1),
+  "irrelevantData" = c(0,0,0,0,0))
+
+happiness.survey <- data.frame(
+  "participant" = c(4, 2, 5, 1, 3),
+  "happiness.score" = c(20, 40, 50, 90, 53))
+
+  
+names(happiness.survey)[names(happiness.survey) == "participant"] <- "id"
+
+# Annat sätt, kräver paketet dplyr (kan installerat och aktiveras i "Packages"-fliken)
+happiness.survey <- rename(happiness.survey, id = participant)
+
+combined <- merge(risk.survey[ ,1:2], happiness.survey, by = "participant")
+combined
+```
+
 
 
