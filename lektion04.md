@@ -6,6 +6,8 @@ Klistra in följande kommentarer i R och genomför varje steg:
 
 ```R
 # Ladda in datasetet ToothGrowth som finns inbyggt i R och spara det i en variabel 'tg'
+# Utforska hur datasetet ser ut och vad det är med ?, head() samt att klicka på dataframen
+# för att se det i tabellformat i RStudio
 
 # 1) Skapa två enkla värden (skalärer) för 'dose' och 'length.limit'
 # Sätt värdena till 1.0 för dose och 15 för length.limit
