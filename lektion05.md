@@ -158,8 +158,7 @@ File → New File → Quarto Document
 ## Struktur i Quarto-dokument
 
 Exempel på Quarto-dokument:
-
-```yaml
+````
 ---
 title: "Min första Quarto-rapport"
 author: "Gustav"
@@ -173,14 +172,16 @@ Detta är lite text.
 * Detta är en punktlista
 * Med flera punkter
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
 # Detta är ett kodblock i R
 x <- c(1, 2, 3, 4, 5)
 mean(x)
 
 # En plot
 plot(x, x^2)
-```
+```   
+
+````
 
 ## Rendera dokumentet
 
