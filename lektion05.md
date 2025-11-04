@@ -230,3 +230,11 @@ execute:
 8. Lägg till figurtext (caption) under plotten som säger "Plot av x mot x^2".
 9. Rendera dokumentet igen och titta på resultatet.
 10. Prova att spara dokumentet som en PDF istället
+
+## Övning 2
+
+1. Läs in csv-filen direkt från https://open.africa/dataset/44359020-b2b0-4b66-af09-3de18d6519dc/resource/61b28877-2801-4812-81ec-21ccc517544d/download/tmp_48mlw2u.csv
+2. Sätt dig in i datan (t.ex. head(), str(), summary()).
+3. Vad går det att visa för något från denna data? Vad kan vara intressant?
+4. Skapa en plot, histogram eller boxplot som visar något från detta dataset.
+5. Skriv en förklarande text över plotten som beskriver vad den visar.
