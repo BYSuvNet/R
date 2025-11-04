@@ -1,5 +1,53 @@
 # Lektion 05 - Quarto
 
+## JSON och nästlade strukturer
+
+```r
+library(jsonlite)
+
+if (file.exists("products.rds")) {
+  products <- readRDS("products.rds")
+} else {
+  products <- fromJSON("https://www.suvnet.se/api/products")
+  saveRDS(products, "products.rds")
+}
+
+# Namnet på den största kategorin
+names(which.max(table(products$category)))
+
+# 
+
+pricePerCategory <- aggregate(price ~ category + brand, products, median)
+
+orderedIndexes <- order(-pricePerCategory$price)
+pricePerCategory[orderedIndexes, ]
+
+boxplot(price ~ category, products)
+
+#########################################################################
+
+orders <- fromJSON("https://suvnet.se/api/orders")
+
+
+items_expanded <- do.call(
+  rbind,
+  lapply(seq_len(nrow(orders)), function(i) {
+    it <- orders$items[[i]]
+    if (is.null(it) || nrow(it) == 0) return(NULL)
+    it
+  })
+)
+
+mergedData <- merge(
+  orders[c("id", "orderDateUtc", "customerId", "currency", "totalAmount")],
+  items_expanded,
+  by.x = "id", by.y = "orderId",
+  all.y = TRUE
+)
+
+head(mergedData)
+```
+
 ## Om SQL och R (1h)
 
 * Exempel med Kristers databas
@@ -52,6 +100,49 @@ dbDisconnect(con)
 # och skapa en ny tabell för City med värdet från den andra kolumnen
 
 ```
+
+## Time series i R (30 min)
+
+```r
+# Skapa en uppkoppling till databasen:
+
+con <- dbConnect(
+  MariaDB(),
+  dbname = "storedb",
+  host = "comet-direct.usbx.me",
+  port = 17815,
+  user = "yhstudent",
+  password = "darthvader123!"
+)
+
+query <- "
+SELECT YEAR(o.CreatedDate) AS Year,
+       MONTH(o.CreatedDate) AS Month,
+       SUM(pto.Quantity * pto.UnitPrice) AS MonthlySales
+FROM COrder o
+JOIN ProductToOrder pto ON pto.OrderId = o.Id
+GROUP BY YEAR(o.CreatedDate), MONTH(o.CreatedDate)
+ORDER BY Year, Month;
+"
+
+monthly <- dbGetQuery(con, query)
+monthly$date <- as.Date(sprintf("%d-%02d-01", monthly$Year, monthly$Month))
+
+monthly$MonthlySales[45] <- 1124488
+
+plot(monthly$date, monthly$MonthlySales, type = "l", lwd = 2, col = "steelblue")
+
+ts_sales <- ts(monthly$MonthlySales, frequency = 12, start = c(2019, 4))
+plot(ts_sales)
+
+fit <- ets(ts_sales)
+fc <- forecast(fit, h = 24)
+
+plot(fc, main = "Prognos för försäljning 6 månader framåt")
+
+# Stäng uppkopplingen till databasen
+dbDisconnect(con)
+``` 
 
 ## Vad är Quarto? (Resten av dagen)
 
@@ -135,3 +226,7 @@ execute:
     ```{r}
     plot(1:255, (1:255)^2)
     ```
+7. Fixa så att plotten visas utan att koden syns.
+8. Lägg till figurtext (caption) under plotten som säger "Plot av x mot x^2".
+9. Rendera dokumentet igen och titta på resultatet.
+10. Prova att spara dokumentet som en PDF istället
