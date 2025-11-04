@@ -3,7 +3,55 @@
 ## Om SQL och R (1h)
 
 * Exempel med Kristers databas
-* Plottning 
+
+```r
+install.packages("DBI")
+install.packages("RMariaDB")
+
+library(DBI)
+library(RMariaDB)
+
+# Skapa en uppkoppling till databasen:
+
+con <- dbConnect(
+  MariaDB(),
+  dbname = "storedb",
+  host = "comet-direct.usbx.me",
+  port = 17815,
+  user = "yhstudent",
+  password = "darthvader123!"
+)
+
+# Gör en query
+
+customers <- dbGetQuery(con, "SELECT * FROM Customer")
+
+# Dela upp adressen till gatuadress och stad
+splitAdress <- do.call(rbind, strsplit(customers$Address, ",\\s*")) # se kommentar längst ner vad detta gör
+customers$Address <- splitAdress[,1]
+customers$City <- splitAdress[,2]
+
+# Räkna antalet gånger olika städer nämns
+cityCount <- table(customers$City)
+
+# Rita ett cirkeldiagram över fördelningen
+pie(cityCount, main = "Kunder per stad")
+
+# Stäng uppkopplingen till databasen
+
+dbDisconnect(con)
+
+# Kommentar om splitAdress:
+# customers$Address är vektorn som innehåller alla adresser i stil med "Sågvägen 5, Borlänge"
+# med strsplit(..., ",\\s*") delar vi den strängen i två bitar vid varje kommatecken följt av x antal mellanslag (det är det som \\s* betyder)
+# vi får då en ny vektor med gatuadress som första index och stad som andra index
+# do.call(rbind, ...) anropar rbind() och skickar in listans elements ett och ett
+# rbind() = Row Bind. Binder ihop vektorer radvid med varandra, staplar dom på varandra. 
+# resultatet blir en matris (som en dataframe fast bara samma datatyp överallt, och inte namngivna kolumner)
+# Vi kan nu sätta den tidigare Adress till värdet på den första kolumnen i matrisen
+# och skapa en ny tabell för City med värdet från den andra kolumnen
+
+```
 
 ## Vad är Quarto? (Resten av dagen)
 
@@ -74,3 +122,16 @@ execute:
   echo: false
   message: false
 
+## Övningar med Quarto
+
+1. Skapa ett nytt Quarto-dokument.
+2. Skriv en kort text om dig själv.
+3. Lägg till ett kodblock utan några inställningar alls (bara {r}). Kodblocket ska:
+    * Skapar en vektor med talen 1 till 255.
+    * Beräknar medelvärdet av vektorn och skriver ut värdet.
+4. Rendera dokumentet och se hur det ser ut.
+5. Ändra kodblocket så att koden inte visas, bara resultatet. Rendera igen och titta på resultatet.
+6. Lägg till detta till ett nytt kodblock:
+    ```{r}
+    plot(1:255, (1:255)^2)
+    ```
