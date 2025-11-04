@@ -239,3 +239,5 @@ execute:
 3. Vad går det att visa för något från denna data? Vad kan vara intressant?
 4. Skapa en plot, histogram eller boxplot som visar något från detta dataset.
 5. Skriv en förklarande text över plotten som beskriver vad den visar.
+
+Läs mer om datasetet här: https://open.africa/dataset/sensorsafrica-airquality-archive-nairobi
