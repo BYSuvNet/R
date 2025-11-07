@@ -33,6 +33,12 @@ Använd table():
 counts <- table(data$column_name)
 ```
 
+## Hur sorterar jag en table i fallande ordning?
+Använd sort() med decreasing = TRUE:
+```r
+sorted_counts <- sort(counts, decreasing = TRUE)
+```
+
 ## Hur väljer jag ut rader som uppfyller ett villkor?
 Använd logisk indexering:
 ```r
