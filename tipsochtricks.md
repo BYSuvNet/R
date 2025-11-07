@@ -5,6 +5,11 @@
 cleaned_data <- na.omit(original_data)
 ```
 
+## Hur ser jag till att tomma strängar ("") blir NA när jag läser in data med read.csv()?
+```r
+data <- read.csv("file.csv", na.strings = c("", "NA"))
+```
+
 ## Hur konverterar jag en datum-sträng till ett datum-objekt i R?
 Används as.Date():
 ```r
