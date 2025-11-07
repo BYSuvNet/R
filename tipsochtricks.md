@@ -39,6 +39,12 @@ Använd sort() med decreasing = TRUE:
 sorted_counts <- sort(counts, decreasing = TRUE)
 ```
 
+## Hur väljer jag ut de fem första raderna i en data frame eller vektor?
+Använd head():
+```r
+top5 <- head(data, 5)
+```
+
 ## Hur väljer jag ut rader som uppfyller ett villkor?
 Använd logisk indexering:
 ```r
